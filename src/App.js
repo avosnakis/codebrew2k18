@@ -16,6 +16,9 @@ const styles = {
     fontSize: '15px'
     
   }
+
+const TEXT = ["Charity 1", "Charity 2", "Charity 3", "Charity 4", "Charity 5", "Charity 6", "Charity 7", "Charity 8"]
+
 }
 
 
@@ -31,13 +34,21 @@ class App extends Component {
         <div style={styles.timeline}>
           <HorizontalTimeline
             index={this.state.value}
+
             indexClick={(index) => {
               this.setState({ value: index, previous: this.state.value });
             }}
+
             values={VALUES} />
         </div>
+
+        <div>
+          {TEXT[this.state.value]}
         </div>
+      </div>
+
     );
+
   }
 }
 
