@@ -29,7 +29,7 @@ const buttonStyles = {
     height: 34,
     width: 34,
     borderRadius: '50%',
-    border: `2px solid ${outline}`,
+    border: `4px solid ${outline}`,
     overflow: 'hidden',
     textIndent: '100%',
     whiteSpace: 'nowrap',
