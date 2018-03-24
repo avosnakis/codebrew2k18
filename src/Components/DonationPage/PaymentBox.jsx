@@ -93,7 +93,7 @@ export class PaymentBox extends React.Component {
       </div>
       <div style={{padding:"10px"}}>
       <Button variant="raised" color="primary">
-        Donate<Done />
+        Donate&nbsp;<Done />
       </Button>
       </div>
     </Card>
