@@ -4,7 +4,7 @@ import HorizontalTimeline from "./Components/HorizontalTimeline";
 
 import './App.css';
 
-const VALUES = ["10-10-1997","10-10-1998", "10-10-1999", "10-10-2000", "10-10-2001",
+const VALUES = ["10-10-1997","10-10-1998","10-10-1999", "10-10-2000", "10-10-2001",
                 "10-10-2002", "10-10-2003", "10-10-2004"];
 
 class App extends Component {
