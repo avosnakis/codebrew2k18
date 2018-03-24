@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import List, {ListItem, ListItemIcon, ListItemText} from 'material-ui/List';
 import AttachMoney from 'material-ui-icons/AttachMoney';
@@ -25,7 +26,7 @@ export default function ButtonsList(props) {
           </ListItemIcon>
           <ListItemText primary="Share" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={Link} to={"/donations/" + props.orgName}>
           <ListItemIcon>
             <AttachMoney />
           </ListItemIcon>
