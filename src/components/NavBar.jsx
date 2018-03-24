@@ -4,6 +4,7 @@ import { withStyles } from 'material-ui/styles';
 
 import AppBar from 'material-ui/AppBar';
 import ToolBar from 'material-ui/Toolbar';
+import { createMuiTheme } from 'material-ui/styles';
 
 const styles = {
   root: {
@@ -11,21 +12,10 @@ const styles = {
   },
 };
 
-function NavBar(props) {
-  const {classes} = props;
-  return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <ToolBar>
-          The Ladies
-        </ToolBar>
-      </AppBar>
+export default function NavBar(props) {
+    return (
+    <div className="navbar">
+      <h1 style={{textAlign:"center"}}>The Ladies</h1>
     </div>
   );
 }
-
-NavBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(NavBar);
