@@ -6,6 +6,18 @@ import AttachMoney from 'material-ui-icons/AttachMoney';
 import Share from 'material-ui-icons/Share';
 import School from 'material-ui-icons/School';
 
+const shareStyle = {
+  textColor: 'red'
+}
+
+const donateStyle = {
+  backgroundColor: 'DeepSkyBlue'
+}
+
+const charityStyle = {
+  backgroundColor: 'OrangeRed'
+}
+
 export const ShareButton = props => {
   return (
     <ListItem button>
