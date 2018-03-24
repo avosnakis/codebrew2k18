@@ -8,6 +8,10 @@ import Typography from 'material-ui/Typography';
 const styles = {
   card: {
     maxWidth: '100%',
+    position: 'relative',
+
+    justifyContent: "center",
+    margin: '15px'
   },
   media: {
     height: 300,
@@ -17,7 +21,7 @@ const styles = {
 function SimpleMediaCard(props) {
   const { classes } = props;
   return (
-    <div>
+    <div style={{justifyContent:'center', display:'flex', flexDirection:'column', alignItems:'center'}}>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
