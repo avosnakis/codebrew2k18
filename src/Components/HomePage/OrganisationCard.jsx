@@ -6,7 +6,9 @@ import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import FlatButton from 'material-ui/Button';
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
-import ButtonsList from './ButtonsList.jsx'
+
+import ButtonsList from './ButtonsList.jsx';
+import OrganisationCardImage from './OrganisationCardImage.jsx';
 
 // TODO figure out why the images aren't rendering
 export default function OrganisationCard(props) {
@@ -21,12 +23,11 @@ export default function OrganisationCard(props) {
       width: 200,
     },
   };
-  console.log(props.data.img)
 
   return (
     <div style={styles.card}>
       <ListItem>
-        <Avatar alt='' src={props.data.img} />
+        <OrganisationCardImage data={{src: props.data.img}} />
         <ListItemText primary={props.data.orgName} secondary={props.data.desc} />
         <ButtonsList />
       </ListItem>
