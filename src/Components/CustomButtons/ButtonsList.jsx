@@ -8,7 +8,7 @@ import School from 'material-ui-icons/School';
 
 import { CharityButton, DonateButton, ShareButton } from './ListButtons.jsx';
 
-
+//Button here
 export default function ButtonsList(props) {
   return (
     <div className={{
