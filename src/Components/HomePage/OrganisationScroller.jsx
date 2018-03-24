@@ -31,7 +31,7 @@ export default function OrganisationScroller(props) {
         </ListItem>
         <ListItem>
           <OrganisationCard data={{
-            img: "/images/unhrc.jpg",
+            img: "https://static1.squarespace.com/static/51a632d3e4b0a0d58d81c520/t/57b63fb2893fc004c0020813/1471561651662/?format=1000w",
             orgName: "UNHRC",
             desc: "The UNHRC is the United Nations Human Rights commission, a body for" +
             " defending human rights worldwide",
@@ -39,7 +39,7 @@ export default function OrganisationScroller(props) {
         </ListItem>
         <ListItem>
           <OrganisationCard data={{
-            img: "/images/unhrc.jpg",
+            img: "https://static1.squarespace.com/static/51a632d3e4b0a0d58d81c520/t/57b63fb2893fc004c0020813/1471561651662/?format=1000w",
             orgName: "UNHRC",
             desc: "The UNHRC is the United Nations Human Rights commission, a body for" +
             " defending human rights worldwide",
@@ -47,7 +47,7 @@ export default function OrganisationScroller(props) {
         </ListItem>
         <ListItem>
           <OrganisationCard data={{
-            img: "/images/unhrc.jpg",
+            img: "https://static1.squarespace.com/static/51a632d3e4b0a0d58d81c520/t/57b63fb2893fc004c0020813/1471561651662/?format=1000w",
             orgName: "UNHRC",
             desc: "The UNHRC is the United Nations Human Rights commission, a body for" +
             " defending human rights worldwide",
