@@ -15,12 +15,14 @@ export default function NavBar(props) {
       fontSize: '4em',
       marginTop: '1em',
       textAlign: 'center',
+      width: '100%',
+      overflow: 'hidden'
     },
   };
   
   return (
     <div className="navbar">
-      <h1 style={styles.header}>The Ladies</h1>
+      <h1 style={styles.header}>Charity Share</h1>
     </div>
   );
 }
