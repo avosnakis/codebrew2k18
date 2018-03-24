@@ -7,7 +7,7 @@ import FlatButton from 'material-ui/Button';
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 
-import ButtonsList from './ButtonsList.jsx';
+import ButtonsList from '../CustomButtons/ButtonsList.jsx';
 import OrganisationCardImage from './OrganisationCardImage.jsx';
 
 // TODO figure out why the images aren't rendering
