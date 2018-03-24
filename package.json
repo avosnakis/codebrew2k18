@@ -5,9 +5,12 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "radium": "^0.23.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-horizontal-timeline": "git+https://github.com/sherubthakur/react-horizontal-timeline.git",
+    "react-scripts": "1.1.1",
+    "stop": "^3.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",

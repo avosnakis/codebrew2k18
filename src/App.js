@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import HorizontalTimeline from "./Components/HorizontalTimeline";
+
+
+
 import './App.css';
 
+const VALUES = [ "10-10-1997","10-10-1998","10-10-1999"];
 class App extends Component {
+  state = { value: 0, previous: 0 };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <div>
+        {/* Bounding box for the Timeline */}
+        <div style={{ width: '100%', height: '100px', margin: '0 auto' }}>
+          <HorizontalTimeline
+            index={this.state.value}
+            indexClick={(index) => {
+              this.setState({ value: index, previous: this.state.value });
+            }}
+            values={ VALUES } />
+        </div>
+        </div>
     );
   }
 }
