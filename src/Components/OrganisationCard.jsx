@@ -8,8 +8,7 @@ import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import ButtonsList from './ButtonsList.jsx'
 
-var fs = require('fs');
-
+// TODO figure out why the images aren't rendering
 export default function OrganisationCard(props) {
   const styles = {
     card: {
