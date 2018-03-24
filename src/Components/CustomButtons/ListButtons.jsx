@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import Menu, { MenuItem } from 'material-ui/Menu';
@@ -7,9 +8,14 @@ import AttachMoney from 'material-ui-icons/AttachMoney';
 import Share from 'material-ui-icons/Share';
 import School from 'material-ui-icons/School';
 import { SocialIcon } from 'react-social-icons';
+        
+const siteStyle = {
+  selected: {
+    color: '#008080'
+  },
+};
 
 export class ShareButton extends React.Component {
-
   state = {
     anchorEl: null,
   };
@@ -26,7 +32,7 @@ export class ShareButton extends React.Component {
     const { anchorEl } = this.state;
     const menuItemStyle = {
       height: '40px',
-    }
+    };
 
     return (
       <div>
@@ -36,7 +42,7 @@ export class ShareButton extends React.Component {
           aria-haspopup="true"
           onClick={this.handleClick}
         >
-          <ListItemIcon>
+          <ListItemIcon style={siteStyle.selected}>
             <Share />
           </ListItemIcon>
           <ListItemText primary="Share" />
@@ -68,7 +74,7 @@ export class ShareButton extends React.Component {
 export const DonateButton = props => {
   return (
     <ListItem button component={Link} to={"/donations/" + props.orgName}>
-      <ListItemIcon>
+      <ListItemIcon style = {siteStyle.selected}>
         <AttachMoney />
       </ListItemIcon>
     <ListItemText primary="Donate" />
@@ -79,10 +85,12 @@ export const DonateButton = props => {
 export const CharityButton = props => {
   return (
     <ListItem button component={Link} to={"/charity/" + props.orgName}>
-      <ListItemIcon>
+      <ListItemIcon style = {siteStyle.selected}>
         <School />
       </ListItemIcon>
     <ListItemText primary="Learn More" />
     </ListItem>
   );
 };
+
+
