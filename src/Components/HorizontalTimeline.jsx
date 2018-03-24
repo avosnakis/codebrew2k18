@@ -141,7 +141,7 @@ HorizontalTimeline.defaultProps = {
   styles: {
     outline: '#dfdfdf',
     background: '#f8f8f8',
-    foreground: '#7b9d6f'
+    foreground: '#008080'
   },
   fillingMotion: {
     stiffness: 150,
