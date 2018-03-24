@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './components/HomePage.jsx'
+import HomePage from './Components/HomePage.jsx'
 
 class App extends Component {
   render() {
