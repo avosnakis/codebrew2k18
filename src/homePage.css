@@ -2,6 +2,8 @@ body {
   background: #f9f9f9;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  font-size: 14px;
+  line-height: 1.42857;
 }
 
 h1 {
@@ -29,9 +31,14 @@ h1 {
 
 .panels {
     min-height: 10vh;
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
     border: solid black;
+    
+}
+
+.panels:hover {
+    overflow: auto;
 }
 
 .panel {
@@ -58,7 +65,8 @@ h1 {
 }
 
 /*======== PANEL INFO =========*/
-.otherInfo {
+
+#otherInfo {
     visibility: hidden;
 }
 
