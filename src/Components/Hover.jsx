@@ -40,15 +40,19 @@ class HoverExample extends Component {
         display: 'inline-block',
         padding: '0 2em',
         lineHeight: '3em',
-        
-        
+        color: '#34495e',
       },
       account: {
         position: 'absolute',
         left: '2em',
         top: '2em',
         listStyleType: 'none',
+      },
+      link : {
+          textDecoration: 'none',
+          color: '#34495e',
       }
+        
     };
       
     return (
@@ -61,11 +65,11 @@ class HoverExample extends Component {
           {
             this.state.isHovering &&
             <div>
-                <li style={styles.search}>Search</li>
-                <li style={styles.search}>Teach</li>
-                <li style={styles.search}>Start a project</li>
-                <li style={styles.search}>Account</li>
-                <li style={styles.search}>Help</li>
+                <li style={styles.search}><a href="google.com" style={styles.link}>Search</a></li>
+                <li style={styles.search}><a href="google.com" style={styles.link}>Teach</a></li>
+                <li style={styles.search}><a href="google.com" style={styles.link}>Start a project</a></li>
+                <li style={styles.search}><a href="google.com" style={styles.link}>Account</a></li>
+                <li style={styles.search}><a href="google.com" style={styles.link}>Help</a></li>
             </div>
           }
         </div>
