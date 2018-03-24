@@ -6,16 +6,21 @@ import AppBar from 'material-ui/AppBar';
 import ToolBar from 'material-ui/Toolbar';
 import { createMuiTheme } from 'material-ui/styles';
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-};
-
 export default function NavBar(props) {
-    return (
+  const styles = {
+    header: {
+      textTransform: 'uppercase',
+      color: '#34495e',
+      letterSpacing: '2px',
+      fontSize: '4em',
+      marginTop: '1em',
+      textAlign: 'center',
+    },
+  };
+  
+  return (
     <div className="navbar">
-      <h1 style={{textAlign:"center"}}>The Ladies</h1>
+      <h1 style={styles.header}>The Ladies</h1>
     </div>
   );
 }
