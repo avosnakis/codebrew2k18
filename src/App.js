@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './Components/HomePage.jsx'
+import {Main} from './Components/Main.jsx'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HomePage/>
+        <Main/>
       </div>
     );
   }
