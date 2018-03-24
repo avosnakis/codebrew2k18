@@ -85,11 +85,20 @@ export class PaymentBox extends React.Component {
       <div>
         <TextField
           id="input-amount"
-          label="Enter an amount"
+          label="Required"
           margin="normal"
           onChange={this.onChange.bind(this)}
           />
         {this.state.currency}
+      </div>
+      <div>
+        <TextField
+          id="multiline-static"
+          label="Leave a message?"
+          multiline
+          rows="4"
+          margin="normal"
+        />
       </div>
       <div style={{padding:"10px"}}>
       <Button variant="raised" color="primary">
