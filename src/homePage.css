@@ -1,0 +1,13 @@
+body {
+  background: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #34495e;
+  letter-spacing: 2px;
+  font-size: 5em;
+  margin-top: 1em;
+}
