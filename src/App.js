@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import HorizontalTimeline from "./Components/HorizontalTimeline";
+import Button from "./Components/Buttons";
 
 import './App.css';
 
@@ -34,8 +35,9 @@ class App extends Component {
         </div>
 
         <div>
-          {TEXT[this.state.value]}
+          <p>{TEXT[this.state.value]}</p>
         </div>
+
       </div>
 
     );
