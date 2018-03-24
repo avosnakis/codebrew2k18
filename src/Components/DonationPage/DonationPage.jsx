@@ -11,7 +11,7 @@ export default function DonationPage(props) {
       <p>All donations are secured via SSL/TSL, and are completely secure.
         You can be anonymous or leave a message; the choice is yours!
       </p>
-      <PaymentBox />
+      <PaymentBox orgName={org}/>
     </div>
   );
 }

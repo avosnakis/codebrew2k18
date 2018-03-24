@@ -8,6 +8,8 @@ import Done from 'material-ui-icons/Done';
 import Button from 'material-ui/Button';
 import Icon from 'material-ui/Icon';
 
+import { PaymentConfirmation } from './PaymentConfirmation.jsx';
+
 export class PaymentBox extends React.Component {
   constructor(props) {
     super(props);
@@ -33,9 +35,9 @@ export class PaymentBox extends React.Component {
       currency: 'USD',
       error: false,
       errorText: "",
+      message: "",
+      amount: ""
     }
-
-    this.toggleError = this.toggleError.bind(this);
   }
 
   handleChange = name => event => {
@@ -44,27 +46,6 @@ export class PaymentBox extends React.Component {
     });
   };
 
-  onChange = event => {
-    const paymentRegex = new RegExp(/^\s*\d*\.?\d*\s*$/);
-    console.log(paymentRegex)
-    console.log(event.target.value);
-    if (paymentRegex.test(event.target.value)) {
-      console.log("passed")
-      this.state.error = false;
-      this.state.errorText = "";
-    } else {
-      console.log("failed")
-      this.state.error = true;
-      this.state.errorText = "Please enter a valid value";
-    }
-  }
-
-  toggleError = () => {
-    this.setState(state => ({
-      error: state.error,
-    }));
-  }
-  
   render() {
    return (
     <Card style={{width:"80%", align:"center"}}>
@@ -87,9 +68,25 @@ export class PaymentBox extends React.Component {
           id="input-amount"
           label="Required"
           margin="normal"
-          onChange={this.onChange.bind(this)}
+          placeholder="Amount"
+          onChange={this.handleChange('amount')}
           />
         {this.state.currency}
+      </div>
+      <div>
+        <TextField
+          id="input-card"
+          label="Required"
+          margin="normal"
+          placeholder="Card Number"
+          />
+        &nbsp;-&nbsp;
+        <TextField
+          id="input-ccv"
+          label="Required"
+          margin="normal"
+          placeholder="CCV"
+          />
       </div>
       <div>
         <TextField
@@ -98,13 +95,17 @@ export class PaymentBox extends React.Component {
           multiline
           rows="4"
           margin="normal"
+          onChange={this.handleChange('message')}
         />
       </div>
-      <div style={{padding:"10px"}}>
-      <Button variant="raised" color="primary">
-        Donate&nbsp;<Done />
-      </Button>
-      </div>
+      <PaymentConfirmation message={this.state.message} 
+        currency={this.state.currency} 
+        currencySymbol={this.state.currencies.filter(currency => {
+          return currency.value === this.state.currency;
+        })[0].label}
+        amount={this.state.amount}
+        orgName={this.props.orgName}
+        /> 
     </Card>
     )
   }
