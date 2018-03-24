@@ -49,43 +49,43 @@ export class PaymentBox extends React.Component {
   render() {
    return (
     <Card style={{width:"80%", align:"center"}}>
-      <TextField
-      id="select-currency"
-      select
-      value={this.state.currency}
-      onChange={this.handleChange('currency')}
-      helperText="Please select your currency"
-      margin="normal"
-      >
-      {this.state.currencies.map(option => (
-        <MenuItem style={{width: 200}} key={option.value} value={option.value}>
-          {option.value} {option.label}
-        </MenuItem>
-      ))}
-      </TextField>
       <div>
+        <TextField
+        id="select-currency"
+        select
+        value={this.state.currency}
+        onChange={this.handleChange('currency')}
+        helperText="Please select your currency"
+        margin="normal"
+        >
+        {this.state.currencies.map(option => (
+          <MenuItem style={{width: 200}} key={option.value} value={option.value}>
+            {option.value} {option.label}
+          </MenuItem>
+        ))}
+        </TextField>&nbsp;&nbsp;
         <TextField
           id="input-amount"
           label="Required"
           margin="normal"
-          placeholder="Amount"
+          helperText="Amount"
           onChange={this.handleChange('amount')}
           />
-        {this.state.currency}
+        {/* {this.state.currency} */}
       </div>
       <div>
         <TextField
           id="input-card"
           label="Required"
           margin="normal"
-          placeholder="Card Number"
+          helperText="Card Number"
           />
         &nbsp;-&nbsp;
         <TextField
           id="input-ccv"
           label="Required"
           margin="normal"
-          placeholder="CCV"
+          helperText="CCV"
           />
       </div>
       <div>
