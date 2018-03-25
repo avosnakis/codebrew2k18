@@ -25,9 +25,9 @@ const CHARITIES = {
     ]
   },
   TRLF: {
-    img: "https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAgqAAAAJDkwOTRjZmQzLWI5ZjctNDhmOS1hNzI3LWFiYTAxOWRjMThhOQ.png",
+    img: "https://www.globalgiving.org/pfil/organ/18109/orglogo.jpg",
     org: "Red Cross Australia",
-    desc: "Description: Tana River Life Foundation (TRLF) is a Charitable Trust set up by Gabriel Teo Kian Chong on 13th December 2005 in Mombasa, Kenya.\n"
+    desc: "Tana River Life Foundation (TRLF) is a Charitable Trust set up by Gabriel Teo Kian Chong on 13th December 2005 in Mombasa, Kenya."
       + "Gabriel has been living and working in Tana River District, Kenya since 1995. The Foundation was set up to with the objective of assisting the "
       + "marginalized through education and acquisition of livelihood skills.",
     timeline: [
@@ -52,28 +52,6 @@ const CHARITIES = {
       }
     ]
   },
-  amnesty: {
-    img: "",
-    org: "",
-    desc: "",
-    timeline: [
-      {
-        date: "1-2-2017",
-        img: "",
-        desc: "",
-      },
-      {
-        date: "10-10-2017",
-        img: "",
-        desc: "",
-      },
-      {
-        date: "2-2-2018",
-        img: "",
-        desc: "",
-      }
-    ]
-  }
 }
 
 export default CHARITIES;

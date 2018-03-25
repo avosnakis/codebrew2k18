@@ -25,10 +25,21 @@ export default function OrganisationCard(props) {
   };
 
   return (
-    <div style={styles.card}>
-      <OrganisationCardImage data={{src: props.data.img}} />
-      <ListItemText primary={props.data.orgName} secondary={props.data.desc} />
-      <ButtonsList orgName={props.data.orgName}/>
+    <div>
+    <Card style={styles.card}>
+      <CardMedia
+        image={props.data.img}
+        style={styles.media}
+      />
+      {/* <OrganisationCardImage data={{src: props.data.img}} /> */}
+      <CardContent>
+        <h2>{props.data.orgName}</h2> 
+        <p>{props.data.desc} </p>
+      </CardContent>
+      <CardActions>
+        <ButtonsList orgName={props.data.orgName}/>
+      </CardActions>
+    </Card>
     </div>
   );
 }

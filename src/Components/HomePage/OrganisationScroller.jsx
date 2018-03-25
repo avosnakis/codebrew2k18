@@ -23,13 +23,7 @@ export default function OrganisationScroller(props) {
 
   return (
     <List style={styles.descriptionPage}>
-      <div style={{float:"right"}}>
-        <ListItem>
-          <OrganisationCard 
-            data={{img: CHARITIES["UNHCR"].img,
-              orgName: "UNHCR",
-              desc: CHARITIES["UNHCR"].desc}} />
-        </ListItem>
+      <div>        
         <ListItem>
           <OrganisationCard 
             data={{img: CHARITIES["TRLF"].img,
@@ -37,7 +31,7 @@ export default function OrganisationScroller(props) {
               desc: CHARITIES["TRLF"].desc}} />
         </ListItem>
         <ListItem>
-          <OrganisationCard
+          <OrganisationCard 
             data={{img: CHARITIES["UNHCR"].img,
               orgName: "UNHCR",
               desc: CHARITIES["UNHCR"].desc}} />
