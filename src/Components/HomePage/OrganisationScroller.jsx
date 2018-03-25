@@ -5,6 +5,7 @@ import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import OrganisationCard from './OrganisationCard.jsx'
 
 import CHARITIES from '../../api.js';
+import {colorScheme} from '../../colorScheme.js';
 
 export default function OrganisationScroller(props) {
   const styles = {
@@ -12,7 +13,7 @@ export default function OrganisationScroller(props) {
       maxHeight: '100%',
       display: 'flex',
       justifyContent: 'center',
-      background: '#FBFBF7',
+      background: colorScheme.primaryColor,
       overflow: 'auto'
     },
     panels: {
