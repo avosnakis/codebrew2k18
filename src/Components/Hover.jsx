@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {colorScheme} from '../colorScheme.js';
 
 class Hover extends Component {
   constructor(props) {
