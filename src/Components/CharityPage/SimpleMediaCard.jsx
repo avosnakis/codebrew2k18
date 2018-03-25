@@ -9,8 +9,8 @@ const styles = {
   card: {
     maxWidth: '100%',
     position: 'relative',
-
-    justifyContent: "center",
+    width: '800px',
+    justifyContent: 'center',
     margin: '15px'
   },
   media: {

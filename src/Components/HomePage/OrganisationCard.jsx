@@ -15,7 +15,7 @@ export default function OrganisationCard(props) {
   const styles = {
     card: {
       display: 'flex',
-      maxHeight: 200,
+      maxHeight: 300,
       width: '100%',
     },
     media: {
@@ -26,11 +26,20 @@ export default function OrganisationCard(props) {
 
   return (
     <div style={styles.card}>
-      <ListItem>
-        <OrganisationCardImage data={{src: props.data.img}} />
-        <ListItemText primary={props.data.orgName} secondary={props.data.desc} />
-        <ButtonsList orgName={props.data.orgName}/>
-      </ListItem>
+      <Card style={styles.card}>
+        <CardMedia
+          image={props.data.img}
+          style={styles.media}
+        />
+        {/* <OrganisationCardImage data={{src: props.data.img}} /> */}
+        <CardContent style={{ width:'80%'}}>
+          <h2>{props.data.orgName}</h2> 
+          <p>{props.data.desc} </p>
+        </CardContent>
+        <CardActions>
+          <ButtonsList orgName={props.data.orgName}/>
+        </CardActions>
+      </Card>
     </div>
   );
 }

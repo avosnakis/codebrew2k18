@@ -20,7 +20,6 @@ const divStyle = {
 
 export default class CharityPage extends React.Component {
   constructor(props) {
-    console.log(props)
     super(props);
     this.state = {
       value: 0, 
