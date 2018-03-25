@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import HorizontalTimeline from './HorizontalTimeline.jsx'
-import SimpleMediaCard from './SimpleMediaCard.jsx'
+import HorizontalTimeline from './HorizontalTimeline.jsx';
+import SimpleMediaCard from './SimpleMediaCard.jsx';
+
+import CHARITIES from '../../api.js';
 
 
 const VALUES = ["10-10-1997","10-10-1998","10-10-1999", "10-10-2000", "10-10-2001",
@@ -17,9 +19,14 @@ const divStyle = {
 }
 
 export default class CharityPage extends React.Component {
-  state = {
-    value: 0, 
-    previous: 0
+  constructor(props) {
+    console.log(props)
+    super(props);
+    this.state = {
+      value: 0, 
+      previous: 0
+    };
+    this.org = CHARITIES[this.props.match.params.orgName];
   }
 
   render() {
@@ -30,23 +37,26 @@ export default class CharityPage extends React.Component {
           <div style={divStyle}>
             <HorizontalTimeline
               index={this.state.value}
-
               indexClick={(index) => {
-               this.setState({ value: index, previous: this.state.value });
+                this.setState({ value: index, previous: this.state.value });
               }}
-
-              values={VALUES} />
-          </div>
-
-          <div>
-            {TEXT[this.state.value]}
+              values={makeDatesList(this.org.timeline)} />
           </div>
         </div>
-
-        <SimpleMediaCard />
-        <SimpleMediaCard />
-        <SimpleMediaCard />
+        <SimpleMediaCard 
+          img={this.org.timeline[this.state.value].img} 
+          desc={this.org.timeline[this.state.value].desc}
+          title={this.org.timeline[this.state.value].title
+        }/>
       </div>
     )
   };
 }
+
+const makeDatesList = timeline => {
+  let arr = [];
+  for (let i = 0; i < timeline.length; i++) {
+    arr.push(timeline[i].date);
+  }
+  return arr;
+};
