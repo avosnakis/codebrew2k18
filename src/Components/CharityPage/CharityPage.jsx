@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 
 import HorizontalTimeline from './HorizontalTimeline.jsx'
 import SimpleMediaCard from './SimpleMediaCard.jsx'
-
+import HeaderBar from './HeaderBar.jsx'
 
 const VALUES = ["10-10-1997","10-10-1998","10-10-1999", "10-10-2000", "10-10-2001",
                "10-10-2002", "10-10-2003", "10-10-2004"];
 
-const TEXT = ["Charity 1", "Charity 2", "Charity 3", "Charity 4", "Charity 5", "Charity 6", "Charity 7", "Charity 8"];
+const TEXT = ["Charity 1", "Charity 2", "Charity 3", "Charity 4", "Charity 5", 
+              "Charity 6", "Charity 7", "Charity 8"];
+
 const divStyle = {
   width: 'center',
   height: '100px',
@@ -25,6 +27,8 @@ export default class CharityPage extends React.Component {
   render() {
     return (
       <div>
+        <HeaderBar />
+
         <div>
           {/* Bounding box for the Timeline */}
           <div style={divStyle}>
@@ -39,7 +43,7 @@ export default class CharityPage extends React.Component {
           </div>
 
           <div>
-            {TEXT[this.state.value]}
+            <p>{TEXT[this.state.value]}</p>
           </div>
         </div>
 
