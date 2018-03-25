@@ -31,6 +31,14 @@ export class PaymentBox extends React.Component {
           value: 'JPY',
           label: '¥',
         },
+        {
+          value: 'INR',
+          label: '₹',
+        },
+        {
+          value: 'CNY',
+          label: '¥',
+        },
       ],
       currency: 'USD',
       error: false,
@@ -48,7 +56,7 @@ export class PaymentBox extends React.Component {
 
   render() {
    return (
-    <Card style={{width:"80%", align:"center"}}>
+    <Card style={{height: "120%", width:"80%", align:"center", margin: "10px"}}>
       <div>
         <TextField
         id="select-currency"
@@ -59,7 +67,7 @@ export class PaymentBox extends React.Component {
         margin="normal"
         >
         {this.state.currencies.map(option => (
-          <MenuItem style={{width: 200}} key={option.value} value={option.value}>
+          <MenuItem style={{width: 120}} key={option.value} value={option.value}>
             {option.value} {option.label}
           </MenuItem>
         ))}
