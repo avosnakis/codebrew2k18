@@ -32,7 +32,7 @@ export default function OrganisationCard(props) {
           style={styles.media}
         />
         {/* <OrganisationCardImage data={{src: props.data.img}} /> */}
-        <CardContent style={{ width:'80%'}}>
+        <CardContent style={{ width:'80%' }}>
           <h2>{props.data.orgName}</h2> 
           <p>{props.data.desc} </p>
         </CardContent>
