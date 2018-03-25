@@ -16,7 +16,7 @@ export default function OrganisationCard(props) {
     card: {
       display: 'flex',
       maxHeight: 200,
-      maxWidth: '100%',
+      width: '100%',
     },
     media: {
       height: 200,

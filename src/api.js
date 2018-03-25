@@ -1,5 +1,5 @@
 const CHARITIES = {
-  UNHRC: {
+  UNHCR: {
     img: "https://static1.squarespace.com/static/51a632d3e4b0a0d58d81c520/t/57b63fb2893fc004c0020813/1471561651662/?format=1000w",
     org: "UNHCR",
     desc: "The Human Rights Council is an inter-governmental body within the United Nations system made up of 47 States responsible for the promotion and protection of all human rights around the globe.",
