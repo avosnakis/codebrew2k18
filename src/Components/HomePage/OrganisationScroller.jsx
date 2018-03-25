@@ -32,9 +32,9 @@ export default function OrganisationScroller(props) {
         </ListItem>
         <ListItem>
           <OrganisationCard 
-            data={{img: CHARITIES["UNHCR"].img,
-              orgName: "UNHCR",
-              desc: CHARITIES["UNHCR"].desc}} />
+            data={{img: CHARITIES["UNHRC"].img,
+              orgName: "UNHRC",
+              desc: CHARITIES["UNHRC"].desc}} />
         </ListItem>
       </div>
     </List>

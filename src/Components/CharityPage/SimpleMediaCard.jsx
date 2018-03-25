@@ -4,6 +4,7 @@ import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import SocialMediaPopup from '../CustomButtons/SocialMediaPopup.jsx';
 
 const styles = {
   card: {
@@ -37,9 +38,7 @@ function SimpleMediaCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialMediaPopup/>
         </CardActions>
       </Card>
     </div>

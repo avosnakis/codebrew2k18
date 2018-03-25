@@ -6,15 +6,10 @@ import SimpleMediaCard from './SimpleMediaCard.jsx';
 
 import CHARITIES from '../../api.js';
 
-
-const VALUES = ["10-10-1997","10-10-1998","10-10-1999", "10-10-2000", "10-10-2001",
-               "10-10-2002", "10-10-2003", "10-10-2004"];
-
-const TEXT = ["Charity 1", "Charity 2", "Charity 3", "Charity 4", "Charity 5", "Charity 6", "Charity 7", "Charity 8"];
 const divStyle = {
   width: 'center',
   height: '100px',
-  margin: '20px',
+  margin: '10px',
   fontSize: '15px'
 }
 
