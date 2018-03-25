@@ -68,6 +68,7 @@ class HoverExample extends Component {
             <li style={styles.search}><a href="google.com" style={styles.link}>Learn</a></li>
             <li style={styles.search}><a href="google.com" style={styles.link}>Start a project</a></li>
             <li style={styles.search}><a href="google.com" style={styles.link}>Account</a></li>
+            
             <li style={styles.search}><a href="google.com" style={styles.link}>Help</a></li>
         </div>
         <img style={styles.imgPos} src="https://i.pinimg.com/564x/0f/d5/96/0fd596108b6fad87271a543257e8f870.jpg"></img>
