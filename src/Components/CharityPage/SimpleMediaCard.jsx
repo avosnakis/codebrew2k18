@@ -25,16 +25,15 @@ function SimpleMediaCard(props) {
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image="http://i0.wp.com/coolwallpaper.website/wp-content/uploads/2016/11/Perfect-Windows-Xp-Bliss-Wallpaper-Download-free-wallpapers-and-desktop-backgrounds-in-a-variety-of-screen-resolutions-chez-lounge-furniture.jpg"
-          title="Contemplative Reptile"
+          image={props.img}
+          style={{ width:'800px', height:'350px'}}
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
-            Lizard
+            {props.title}
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {props.desc}
           </Typography>
         </CardContent>
         <CardActions>
