@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import HorizontalTimeline from './HorizontalTimeline.jsx';
 import SimpleMediaCard from './SimpleMediaCard.jsx';
-import ButtonHeader from './ButtonHeader.jsx'
+import ButtonHeader from './ButtonHeader.jsx';
 
 import CHARITIES from '../../api.js';
 
@@ -38,16 +38,17 @@ export default class CharityPage extends React.Component {
               indexClick={(index) => {
                 this.setState({ value: index, previous: this.state.value });
               }}
-              values={makeDatesList(this.org.timeline)} />
+              values={makeDatesList(this.org.timeline)} 
+            />
           </div>
         </div>
-        <SimpleMediaCard 
+        <SimpleMediaCard
           img={this.org.timeline[this.state.value].img} 
           desc={this.org.timeline[this.state.value].desc}
           title={this.org.timeline[this.state.value].title
         }/>
       </div>
-    )
+    );
   };
 }
 

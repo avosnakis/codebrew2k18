@@ -63,7 +63,7 @@ class Hover extends Component {
     return (
       <div className="Appbar" style={styles.explore}>
         <div>
-            <li style={styles.search}><a href="google.com" style={styles.link}>Search</a></li>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Home</a></li>
             <li style={styles.search}><a href="google.com" style={styles.link}>Learn</a></li>
             <li style={styles.search}><a href="google.com" style={styles.link}>Start a project</a></li>
             <li style={styles.search}><a href="https://bshehata.github.io/dashboardv2" style={styles.link}>Account</a></li>
