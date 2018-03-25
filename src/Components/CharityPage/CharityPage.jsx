@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import HorizontalTimeline from './HorizontalTimeline.jsx';
 import SimpleMediaCard from './SimpleMediaCard.jsx';
+import ButtonHeader from './ButtonHeader.jsx'
 
 import CHARITIES from '../../api.js';
 
@@ -26,6 +27,9 @@ export default class CharityPage extends React.Component {
   render() {
     return (
       <div>
+        <div>
+          <ButtonHeader org={this.org.org}/>
+        </div>
         <div>
           {/* Bounding box for the Timeline */}
           <div style={divStyle}>
