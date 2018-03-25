@@ -12,7 +12,7 @@ export default function NavBar(props) {
       textTransform: 'uppercase',
       color: '#34495e',
       letterSpacing: '2px',
-      fontSize: '4em',
+      fontSize: '3.5em',
       marginTop: '0.1em',
       textAlign: 'center',
       width: '100%',
