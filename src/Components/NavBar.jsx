@@ -9,11 +9,11 @@ import { createMuiTheme } from 'material-ui/styles';
 export default function NavBar(props) {
   const styles = {
     header: {
-      textTransform: 'uppercase',
       color: '#34495e',
       letterSpacing: '2px',
       fontSize: '3.5em',
       marginTop: '0.1em',
+      paddingBottom: '5px',
       textAlign: 'center',
       width: '100%',
       overflow: 'hidden'
