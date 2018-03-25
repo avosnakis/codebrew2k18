@@ -25,6 +25,7 @@ class HoverExample extends Component {
       explore: {
         textAlign: 'center',
         margin: '0',
+        fontFamily: 'Courier New',
       },
     
       difference: {
@@ -32,7 +33,7 @@ class HoverExample extends Component {
         padding: '0 3em',
         lineHeight: '3em',
         transform: 'scale(2)',
-        fontFamily: 'sans-serif',
+        fontFamily: 'Open Sans',
         fontSize: '0.75em',
         color: '#34495e',
       }, 
@@ -49,30 +50,27 @@ class HoverExample extends Component {
         listStyleType: 'none',
       },
       link : {
-          textDecoration: 'none',
-          color: '#34495e',
+        textDecoration: 'none',
+        color: '#34495e',
+      },
+      imgPos: {
+        margin: '-1em -1em -3em 0',
+        width: '22em',
+        height: '16em',
       }
         
     };
       
     return (
       <div className="Appbar" style={styles.explore}>
-        <div
-          onMouseEnter={this.handleMouseHover}
-          onMouseLeave={this.handleMouseHover}
-        >
-          <li style={styles.difference}>Explore</li>
-          {
-            this.state.isHovering &&
-            <div>
-                <li style={styles.search}><a href="google.com" style={styles.link}>Search</a></li>
-                <li style={styles.search}><a href="google.com" style={styles.link}>Teach</a></li>
-                <li style={styles.search}><a href="google.com" style={styles.link}>Start a project</a></li>
-                <li style={styles.search}><a href="google.com" style={styles.link}>Account</a></li>
-                <li style={styles.search}><a href="google.com" style={styles.link}>Help</a></li>
-            </div>
-          }
+        <div>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Search</a></li>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Learn</a></li>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Start a project</a></li>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Account</a></li>
+            <li style={styles.search}><a href="google.com" style={styles.link}>Help</a></li>
         </div>
+        <img style={styles.imgPos} src="https://i.pinimg.com/564x/0f/d5/96/0fd596108b6fad87271a543257e8f870.jpg"></img>
       </div>
     );
   }
