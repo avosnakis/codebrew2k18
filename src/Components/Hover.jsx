@@ -25,7 +25,7 @@ class Hover extends Component {
       explore: {
         textAlign: 'center',
         margin: '0',
-        fontFamily: 'Courier New',
+        // fontFamily: 'Courier New',
       },
     
       difference: {
